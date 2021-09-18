@@ -1,0 +1,89 @@
+:root {
+  --bg-color: #ffffea;
+  --fg-color: #000000;
+  --accent-color: blue;
+  --visited-link: initial;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #01242e;
+    --fg-color: #dddddd;
+    --accent-color: #8cc2dd;
+    --visited-link: #fff;
+  }
+}
+
+body {
+  font-size: 1.2em;
+  font-family: "Go", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+}
+
+main, header, footer {
+  max-width: 80vh;
+  margin: 0 auto;
+}
+
+main {
+  margin-top: 2em;
+  text-align: justify;
+}
+
+article {
+  hyphens: auto;
+}
+
+nav > ul {
+  list-style: none;
+}
+
+nav > ul > li {
+  display: inline;
+  margin-right: 1em;
+}
+
+a:link {
+  color: var(--accent-color);
+}
+
+a:visited {
+  color: var(--visited-link);
+}
+
+section.footnotes {
+  margin-top: 4em;
+}
+
+footer {
+  text-align: center;
+}
+
+.highlight, pre {
+  font-family: monospace;
+}
+
+h1, h2 {
+  font-family: "Go Smallcaps", serif;
+}
+
+.read-more {
+  display: inline-block;
+}
+
+.paginator {
+  text-align: center;
+  margin-top: 3em;
+  font-size: 0.9em;
+}
+
+.post-summary {
+  margin-top: 2em;
+}
+
+.post-summary > time {
+  font-size: 0.9em;
+  text-align: right;
+  display: block;
+}

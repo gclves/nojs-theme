@@ -1,3 +1,12 @@
 <footer>
-	<p>&copy; {{ now.Year }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a></p>
+  Public Domain | <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+  {{ with .Site.Menus.footer }}
+  <nav>
+    <ul>
+      {{ range . }}
+      <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+  {{ end }}
 </footer>
