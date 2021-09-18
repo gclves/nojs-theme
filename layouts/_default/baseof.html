@@ -13,9 +13,11 @@
     {{- end }}
   </head>
   <body>
-    {{ partial "header" . }}
-    {{ block "main" . }}{{ end }}
-    {{ partial "footer" . }}
-    <!-- {{ partial "noscript" . }} -->
+    <noscript>
+      {{ partial "header" . }}
+      {{ block "main" . }}{{ end }}
+      {{ partial "footer" . }}
+    </noscript>
+    {{ partial "noscript" . }}
   </body>
 </html>
