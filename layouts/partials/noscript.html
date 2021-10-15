@@ -6,6 +6,17 @@
      document.addEventListener('DOMContentLoaded', fn);
    }
  }
+ ready(() => {
+   const h1 = document.createElement('h1');
+   const a = document.createElement('a');
+
+   h1.innerText = 'Please disable JavaScript';
+   h1.id = 'disable-js-banner';
+   a.setAttribute('href', '{{ .Site.Params.noJSLink }}');
+   a.appendChild(h1);
+
+   document.body.appendChild(a);
+ });
+
 </script>
 <script src="{{ .Site.BaseURL }}js/mystify.js"></script>
-<script src="{{ .Site.BaseURL }}js/js-banner.js"></script>

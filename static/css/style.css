@@ -89,3 +89,12 @@ h1, h2 {
   text-align: right;
   display: block;
 }
+
+#disable-js-banner {
+  color: white;
+  position: absolute;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+  text-align: center;
+}
