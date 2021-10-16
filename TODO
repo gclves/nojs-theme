@@ -1,4 +1,2 @@
 - Show reading time
 - Move Copyright info to config
-- Parameterize what happens when JS is enabled
-- Allow permalinks to work even with JS
