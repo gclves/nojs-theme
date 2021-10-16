@@ -22,12 +22,14 @@ body {
 }
 
 main, header, footer {
-  max-width: 80vh;
+  max-width: 720px;
   margin: 0 auto;
 }
 
 main {
   margin-top: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
   text-align: justify;
 }
 
