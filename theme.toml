@@ -1,13 +1,13 @@
-name = "Blank"
+name = "gg"
 license = "MIT"
-licenselink = "https://github.com/vimux/blank/blob/master/LICENSE"
-description = "Starter Hugo theme for developers."
-homepage = "https://github.com/vimux/blank/"
-demosite = "https://blank-demo.netlify.app/"
-tags = ["blog", "plain", "blank", "starter", "development"]
+licenselink = "https://git.sr.ht/~gg/blog-theme/tree/master/item/LICENSE"
+description = "Simple theme that hides content when JS is enabled"
+homepage = "https://git.sr.ht/~gg/blog-theme"
+demosite = "https://www.gclv.es"
+tags = ["blog", "plain", "blank", "starter", "development", "noscript"]
 features = ["blog"]
 min_version = "0.20"
 
 [author]
-  name = "Vimux"
-  homepage = "https://github.com/vimux"
+  name = "gclv"
+  homepage = "https://gclv.es"
