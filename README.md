@@ -1,8 +1,8 @@
-# Blank
+# gg
 
-Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to make your own theme.
+A simple Hugo theme. Plan9-inspired palette with a simple dark mode. Content is only visible with JS disabled.
 
-**[Demo](https://blank-demo.netlify.app/)**
+**[Demo](https://gclv.es/)**
 
 ![Blank theme screenshot](https://github.com/Vimux/blank/blob/master/images/splash.png)
 
@@ -10,22 +10,22 @@ Blank — starter [Hugo](https://gohugo.io/) theme for developers. Use it to mak
 
 In your Hugo site `themes` directory, run:
 
-```
-git clone https://github.com/vimux/blank
-```
+    git submodule add https://git.sr.ht/~gg/blog-theme
 
-Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `blank`.
+Next, open `config.toml` in the base of the Hugo site and ensure the theme option is set to `gg`.
 
-```
-theme = "blank"
-```
+    theme = "gg"
 
 For more information read the official [quick start guide](https://gohugo.io/getting-started/quick-start/) of Hugo.
 
-## Contributing
+## Configuration
 
-Have you found a bug or got an idea for a new feature? Feel free to use the [issue tracker](https://github.com/Vimux/blank/issues) to let me know. Or make directly a [pull request](https://github.com/Vimux/blank/pulls).
+The theme uses the following parameters:
+
+- `noJsLink`: the URL that the "Please disable JS" banner will point to
+- `uselessJSFile`: a script that will be executed when JS is enabled. Make it as useless as possible!
+- `copyright`: copyright info to be displayed in the footer
 
 ## License
 
-This theme is released under the [MIT license](https://github.com/Vimux/blank/blob/master/LICENSE).
+This theme is released under the [MIT license](https://git.sr.ht/~gg/blog-theme/tree/master/item/LICENSE).
